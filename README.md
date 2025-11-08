@@ -1,10 +1,16 @@
-# Daktela URL Scheme Handler for macOS
+# Daktela URL Scheme Handler
 
-> Automatically register [Daktela](https://www.daktela.com/) as the default handler for `tel:` and `callto:` URL schemes on macOS.
+> Automatically register [Daktela](https://www.daktela.com/) as the default handler for `tel:` and `callto:` URL schemes on **macOS** and **Windows**.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![macOS](https://img.shields.io/badge/macOS-10.10+-blue.svg)](https://www.apple.com/macos/)
+[![Windows](https://img.shields.io/badge/Windows-10%2B-0078D4.svg)](https://www.microsoft.com/windows/)
 [![Tests](https://img.shields.io/badge/tests-13%2F13%20passing-brightgreen.svg)](run-tests.sh)
+
+## 📦 Platform Support
+
+- **macOS:** Fully supported (Bash + Python)
+- **Windows:** Fully supported (VBScript, no PowerShell needed)
 
 ---
 
@@ -53,13 +59,23 @@ Both should now open in Daktela! 🎉
 
 ## 📖 Usage
 
-### Basic Usage (Auto-detect)
+### macOS
+
+**For users:** See [macOS_USER_GUIDE.md](macOS_USER_GUIDE.md)
 
 ```bash
 ./daktela-callto-register.sh
 ```
 
-The script will automatically find Daktela and register it.
+### Windows
+
+**For users:** See [Windows_USER_GUIDE.md](Windows_USER_GUIDE.md)
+
+1. Double-click: `Install-Daktela-Handler.vbs`
+2. Click "Yes" when prompted for admin access
+3. Test with: `test-links.html`
+
+That's it! 🎉
 
 ### Custom App Name
 

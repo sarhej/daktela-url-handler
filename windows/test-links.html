@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Daktela Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; }
+        h1 { color: #333; }
+        .links { margin: 20px 0; }
+        a { display: inline-block; margin: 5px; padding: 10px 15px; background: #667eea; color: white; text-decoration: none; border-radius: 5px; }
+        a:hover { background: #764ba2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daktela URL Handler Test</h1>
+        <p>Click any link to test if Daktela is registered:</p>
+        
+        <h2>Tel: Links</h2>
+        <div class="links">
+            <a href="tel:+1234567890">+1 (234) 567-890</a>
+            <a href="tel:+420234567890">+420 234 567 890</a>
+            <a href="tel:123456789">123456789</a>
+        </div>
+        
+        <h2>Callto: Links</h2>
+        <div class="links">
+            <a href="callto:user@example.com">user@example.com</a>
+            <a href="callto:contact@daktela.com">contact@daktela.com</a>
+        </div>
+        
+        <p><strong>Success:</strong> Link opens in Daktela</p>
+        <p><strong>Failure:</strong> Nothing happens or wrong app opens</p>
+    </div>
+</body>
+</html>
