@@ -25,17 +25,21 @@ When you click phone links like `tel:123456789` or `callto:user@example.com` any
 
 ## ⚡ Quick Start
 
-### Prerequisites
+### 🎯 For Regular Users (Non-Technical)
 
-1. **Install Daktela** from [daktela.com](https://www.daktela.com/)
-2. **Launch it once** (registers the app with macOS)
-3. Then run this script
+**→ See [EASY_INSTALL.md](EASY_INSTALL.md) for simple step-by-step instructions with screenshots!**
 
-### Installation
+**Or use this one-line installer:**
+```bash
+cd ~/Downloads && curl -O https://raw.githubusercontent.com/sarhej/daktela-url-handler/main/daktela-callto-register.sh && chmod +x daktela-callto-register.sh && ./daktela-callto-register.sh
+```
+Just copy, paste into Terminal, and press Enter! ✨
+
+### 👨‍💻 For Developers
 
 ```bash
-# Download the script
-git clone https://github.com/YOUR_USERNAME/daktela-url-handler.git
+# Clone the repository
+git clone https://github.com/sarhej/daktela-url-handler.git
 cd daktela-url-handler
 
 # Make executable
@@ -44,6 +48,12 @@ chmod +x daktela-callto-register.sh
 # Run it
 ./daktela-callto-register.sh
 ```
+
+### ✅ Prerequisites
+
+1. **Install Daktela** from [daktela.com](https://www.daktela.com/)
+2. **Launch it once** (registers the app with macOS)
+3. Then run the script above
 
 ### Verify It Works
 
