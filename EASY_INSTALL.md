@@ -12,54 +12,57 @@
 
 ---
 
-## 📥 Step 1: Download the Script
+## 🚀 EASIEST METHOD: One-Line Installer ⭐
 
-### Option A: Download Directly
+**This is the simplest way! Just 2 steps:**
 
-1. **Go to:** https://github.com/sarhej/daktela-url-handler
-2. **Click the green "Code" button**
-3. **Select "Download ZIP"**
-4. **Find the downloaded file** in your Downloads folder
-5. **Double-click** `daktela-url-handler-main.zip` to unzip it
-6. **Open the folder** `daktela-url-handler-main`
+### Step 1: Open Terminal
 
-### Option B: Direct Download (Even Easier!)
+1. Press `⌘ Cmd + Space` (opens Spotlight)
+2. Type: `Terminal`
+3. Press `Enter`
 
-1. **Click this link:** [Download daktela-callto-register.sh](https://github.com/sarhej/daktela-url-handler/raw/main/daktela-callto-register.sh)
-2. **Right-click** → **Save As...**
-3. **Save to Downloads** folder
-4. **Remember where you saved it!**
+### Step 2: Copy-Paste This Line
+
+```bash
+curl -sSL https://raw.githubusercontent.com/sarhej/daktela-url-handler/main/daktela-callto-register.sh | bash
+```
+
+**Just paste and press Enter!** ✨
+
+This method:
+- ✅ Downloads the script
+- ✅ Runs it automatically  
+- ✅ **Avoids "Operation not permitted" errors**
+- ✅ No file management needed
+
+**That's it! Skip to "How to Test It Works" below.**
 
 ---
 
-## 🚀 Step 2: Run the Script
+## 📥 Alternative: Download & Run Manually
 
-### Method 1: Using Terminal (Recommended)
+*Only use this if the one-liner doesn't work for you*
 
-1. **Open Terminal**
+### Method 1: Download and Run
+
+1. **Download the script**
+   - [Click here to download](https://github.com/sarhej/daktela-url-handler/raw/main/daktela-callto-register.sh)
+   - It will save to your Downloads folder
+
+2. **Open Terminal**
    - Press `⌘ Cmd + Space` (opens Spotlight)
    - Type: `Terminal`
    - Press `Enter`
 
-2. **Navigate to the downloaded script**
-   ```bash
-   cd ~/Downloads/daktela-url-handler-main
-   ```
-   
-   Or if you downloaded just the script:
+3. **Copy-paste these commands** (all 3 lines):
    ```bash
    cd ~/Downloads
+   xattr -d com.apple.quarantine daktela-callto-register.sh
+   bash daktela-callto-register.sh
    ```
 
-3. **Make the script executable**
-   ```bash
-   chmod +x daktela-callto-register.sh
-   ```
-
-4. **Run the script**
-   ```bash
-   ./daktela-callto-register.sh
-   ```
+4. **Press Enter** after pasting
 
 5. **Done!** You should see success messages.
 
@@ -132,6 +135,27 @@ Or:
 
 ## 🆘 Troubleshooting
 
+### "Operation not permitted" 🔒
+
+**This is macOS Gatekeeper protecting you from downloaded files!**
+
+**Solution 1: Remove quarantine (recommended)**
+```bash
+xattr -d com.apple.quarantine daktela-callto-register.sh
+chmod +x daktela-callto-register.sh
+./daktela-callto-register.sh
+```
+
+**Solution 2: Run with bash directly**
+```bash
+bash daktela-callto-register.sh
+```
+
+**Solution 3: Use the one-liner instead (bypasses this issue)**
+```bash
+curl -sSL https://raw.githubusercontent.com/sarhej/daktela-url-handler/main/daktela-callto-register.sh | bash
+```
+
 ### "Permission denied"
 
 **Solution:** You forgot to make it executable!
@@ -175,16 +199,16 @@ Or simply uninstall Daktela.
 
 ## 📱 Even Easier: Copy-Paste Instructions
 
-**Just copy and paste these 3 lines into Terminal:**
+**Just copy and paste this ONE line into Terminal:**
 
 ```bash
-cd ~/Downloads && curl -O https://raw.githubusercontent.com/sarhej/daktela-url-handler/main/daktela-callto-register.sh && chmod +x daktela-callto-register.sh && ./daktela-callto-register.sh
+curl -sSL https://raw.githubusercontent.com/sarhej/daktela-url-handler/main/daktela-callto-register.sh | bash
 ```
 
 That's it! One line does everything:
 - Downloads the script
-- Makes it executable
-- Runs it
+- Runs it directly
+- **No "Operation not permitted" errors!** (bypasses macOS quarantine)
 
 ---
 

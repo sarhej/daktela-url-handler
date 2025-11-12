@@ -31,9 +31,10 @@ When you click phone links like `tel:123456789` or `callto:user@example.com` any
 
 **Or use this one-line installer:**
 ```bash
-cd ~/Downloads && curl -O https://raw.githubusercontent.com/sarhej/daktela-url-handler/main/daktela-callto-register.sh && chmod +x daktela-callto-register.sh && ./daktela-callto-register.sh
+curl -sSL https://raw.githubusercontent.com/sarhej/daktela-url-handler/main/daktela-callto-register.sh | bash
 ```
-Just copy, paste into Terminal, and press Enter! ✨
+Just copy, paste into Terminal, and press Enter! ✨  
+*(No "Operation not permitted" errors - bypasses macOS quarantine)*
 
 ### 👨‍💻 For Developers
 
